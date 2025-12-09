@@ -248,7 +248,7 @@ chmod +x /usr/bin/ech-workers
 
 START=99
 STOP=10
-
+USE_PROCD=1
 start_service() {
     procd_open_instance
     procd_set_param command /usr/bin/ech-workers \
